@@ -1,0 +1,86 @@
+[
+    ["svm1", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"linear",
+                              "class_weight":"balanced",
+                              "C":0.5}
+    }],
+    ["svm2", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"linear",
+                              "class_weight":"balanced",
+                              "C":1.0}
+    }],
+    ["svm3", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"linear",
+                              "class_weight":"balanced",
+                              "C":3.0}
+    }],
+    ["svm4", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"linear",
+                              "class_weight":"balanced",
+                              "C":5.0}
+    }],
+    ["svm5", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"linear",
+                              "class_weight":"balanced",
+                              "C":8.0}
+    }],
+    ["svm6", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"linear",
+                              "class_weight":"balanced",
+                              "C":10.0}
+    }],
+    ["svm7", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"rbf",
+                              "class_weight":"balanced",
+                              "C":0.5}
+    }],
+    ["svm8", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"rbf",
+                              "class_weight":"balanced",
+                              "C":1.0}
+    }],
+    ["svm9", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"rbf",
+                              "class_weight":"balanced",
+                              "C":3.0}
+    }],
+    ["svm10", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"rbf",
+                              "class_weight":"balanced",
+                              "C":5.0}
+    }],
+    ["svm11", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"rbf",
+                              "class_weight":"balanced",
+                              "C":8.0}
+    }],
+    ["svm12", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"rbf",
+                              "class_weight":"balanced",
+                              "C":10.0}
+    }]
+]

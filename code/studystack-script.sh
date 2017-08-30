@@ -1,0 +1,10 @@
+ipython -- scraping\ studystack\ flashcards.py -f 1 -l 1 > 1.log
+ipython -- scraping\ studystack\ flashcards.py -f 2 -l 2 > 2.log
+ipython -- scraping\ studystack\ flashcards.py -f 3 -l 3 > 3.log
+ipython -- scraping\ studystack\ flashcards.py -f 4 -l 4 > 4.log
+ipython -- scraping\ studystack\ flashcards.py -f 5 -l 5 > 5.log
+ipython -- scraping\ studystack\ flashcards.py -f 6 -l 6 > 6.log
+ipython -- scraping\ studystack\ flashcards.py -f 7 -l 7 > 7.log
+ipython -- scraping\ studystack\ flashcards.py -f 8 -l 8 > 8.log
+ipython -- scraping\ studystack\ flashcards.py -f 9 -l 9 > 9.log
+ipython -- scraping\ studystack\ flashcards.py -f 10 -l 10 > 10.log

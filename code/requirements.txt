@@ -1,0 +1,38 @@
+We have run all our scripts for building our architecture on different
+machines. However, here we are defining the minimum requirements for
+our code to run properly.
+
+Hardware requirements:
+ - a server machine with:
+   - 16 Gb of ram
+   - the more cores the better (we parallelized up to 8 threads for
+   w2v and xgboost)
+
+Software requirements:
+
+  - a Linux machine (we used Ubuntu 14.04+)
+  - for YATStool:
+    - Java 8
+    - other libraries have been included in the jar
+
+  - for python:
+    - python 3.4+ (we are using iPython 3.2.1 as the interpreter)
+    - numpy 1.10+
+    - scipy 0.16+
+    - sklearn 0.17+
+    - pandas 0.15+
+    - nltk 3.1+:
+      - for which we downloaded several packages:
+      	- stopwords
+	- punkt
+	- snowball
+    - gensim 0.12.3
+    - selenium 2.48 (for scraping)
+    - beautifulsoup 4.4.1 (for scraping)
+    - pyvirtualdisplay (for scraping)
+    - seaborn 0.6+ (for plotting options)
+    - matplotlib 1.5.dev
+
+  - Additional tools:
+    - phantomjs (to use with selenium for scraping)
+    - xgboost (downloaded as the latest version from the git repo)

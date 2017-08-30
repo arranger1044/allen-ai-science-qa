@@ -1,0 +1,71 @@
+[
+    ["logistic1", {
+        "base_model": "lr",
+        "base_model_params": {
+            "fit_intercept": true,
+            "class_weight": "balanced",
+            "penalty": "l2",
+            "C": 0.5,
+            "max_iter": 200}
+    }],
+    ["logistic2", {
+        "base_model": "lr",
+        "base_model_params": {
+            "fit_intercept": true,
+            "class_weight": "balanced",
+            "penalty": "l2",
+            "C": 0.8,
+            "max_iter": 200}
+    }],
+    ["logistic3", {
+        "base_model": "lr",
+        "base_model_params": {
+            "fit_intercept": true,
+            "class_weight": "balanced",
+            "penalty": "l2",
+            "C": 1.0,
+            "max_iter": 200}
+    }],
+    ["logistic4", {
+        "base_model": "lr",
+        "base_model_params": {
+            "fit_intercept": true,
+            "class_weight": "balanced",
+            "penalty": "l2",
+            "C": 3.0,
+            "max_iter": 200}
+    }],
+    ["logistic5", {
+        "base_model": "lr",
+        "base_model_params": {
+            "fit_intercept": true,
+            "class_weight": "balanced",
+            "penalty": "l2",
+            "C": 5.0,
+            "max_iter": 200}
+    }],
+    ["logistic6", {
+        "base_model": "lr",
+        "base_model_params": {
+            "fit_intercept": true,
+            "class_weight": "balanced",
+            "penalty": "l2",
+            "C": 10.0,
+            "max_iter": 200}
+    }],
+    ["logistic7", {
+        "base_model": "lr",
+        "base_model_params": {
+            "fit_intercept": true,
+            "class_weight": "balanced",
+            "penalty": "l2",
+            "C": 15.0,
+            "max_iter": 200}
+    }]
+]
+
+
+
+
+
+

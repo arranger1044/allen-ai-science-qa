@@ -1,0 +1,268 @@
+[
+  
+    ["gradboost1", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 30,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost2", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 30,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }],
+    ["gradboost3", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 40,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost4", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 40,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }],
+    ["gradboost5", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 50,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost6", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 50,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }],
+    ["gradboost7", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 30,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost8", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 30,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }],
+    ["gradboost9", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 40,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost10", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 40,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }],
+    ["gradboost11", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 50,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost12", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 50,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }],
+    ["gradboost13", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 30,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost14", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 30,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }],
+    ["gradboost15", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 40,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost16", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 40,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }],
+    ["gradboost17", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 50,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost18", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 50,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }],
+    ["gradboost19", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 30,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost20", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 30,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }],
+    ["gradboost21", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 40,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost22", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 40,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }],
+    ["gradboost23", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 50,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }],
+    ["gradboost24", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.01,
+                              "n_estimators": 50,
+                              "subsample": 0.8,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 4}
+    }]
+
+]

@@ -1,0 +1,99 @@
+We used several corpora to build up our architecture. We exploited three different kinds of resources:
+- science books
+- science flashcards
+- a filtered version of wikipedia
+
+Concerning science books we used:
+
+- ck12.org books: We scraped all the books reachable from this url http://www.ck12.org/standards/ (with the exception of 'http://www.ck12.org/book/CK-12-Algebra-I-Second-Edition/', 'http://www.ck12.org/book/CK-12-Geometry-Basic/', 'http://www.ck12.org/book/CK-12-Basic-Probability-and-Statistics-A-Short-Course/') and we build a unified corpus, from here on 'ck12'
+
+- a summary of ck12.org topics, called 'concepts' from here on, downloaded from this url http://www.ck12.org/flx/show/epub/user%3AanBkcmVjb3VydEBnbWFpbC5jb20./Concepts_b_v8_vdt.epub in a epub format, converted to simple text using Calibre (https://calibre-ebook.com/)
+
+- science books downloaded from http://www.openculture.com/free_textbooks ('openculture') from pdf format and converted with pure txt with pdf2txt.py (from pdf miner http://www.unixuser.org/~euske/python/pdfminer/), namely:
+  - http://www.learner.org/courses/biology/textbook/index.html
+  - http://www.curriki.org/xwiki/bin/view/Coll_Group_CLRN-OpenSourceEarthScienceCourse/EarthSystemsAnEarthScienceCourse?bc=
+  - https://archive.org/details/ost-physics-essentialphysics1
+  - http://scipp.ucsc.edu/outreach/index2.html
+  
+- free pdf science books from fhsst (converted to pure text with pdfminer as well) available at this url http://www.nongnu.org/fhsst/2_project.html, namely:
+  - Chemistry
+  - Physics
+  
+- science books downloaded from https://www.openstaxcollege.org/books (downloaded as ebook and converted with Calibri), namely:
+  - Anatomy & Physiology
+  - Biology
+  - Concepts of Biology
+  - Chemistry
+  - Physics
+
+- One free science book on chemistry downloaded from saylor.org
+
+- free science books downloaded as pdfs from http://www.schools.utah.gov/CURR/science/OER.aspx (converted using pdfminer), namely:
+  - 3rd Grade: Science
+  - 4th Grade: Science
+  - 5th Grade: Science
+  - 6th Grade: Science
+  - 7th Grade: Integrated Science
+  - 8th Grade: Integrated Science
+  - 8th Grade: Integrated Science (2014)
+  - Biology
+  - Chemistry
+  - Earth Science
+  - Physics
+
+
+Concerning the flashcards, we exploited these free internet sites from which we scraped several decks of flashcards, recorded as pure text as pairs of question and answer:
+
+- studystack.com, as we scraped the following categories:
+  - Biology the first 5 pages, ordered by relevance
+  - Chemistry the first 3 pages, ordered by relevance
+  - Earth Science, the first 3 pages, ordered by relevance
+  - Physical Science, the first 2 pages, ordered by relevance
+  - Physics the first page, ordere by relevance
+  - Science, the first 15 pages, ordered by relevance
+  
+- quizlet.com, where we scraped the following categories, taking the first 10 pages for each one:
+  - Anatomy
+  - Astronomy
+  - Biology
+  - Chemistry
+  - Earth Science
+  - Physics
+  - Physiology
+  - Science
+
+- cramberry.net, where we got all the cards from these categories:
+  - Anatomy (55 pages)
+  - Astronomy (11 pages)
+  - Biology (105 pages)
+  - Chem (22 pages)
+  - Chemistry (64 pages)
+  - Earth Science (345 pages)
+  - Physics (37 pages)
+  - Physiology (32 pages)
+  - Science (231 pages)
+
+- cueflash.com, from which we took the flashcards from the following categories (all possible results up to 100 max pages):
+  - Science
+  - Biology,
+  - Physics
+  - Chemistry
+  - Anatomy
+  - Physiology
+  - Cell
+  - Chem
+  - Earth
+
+- studydroid.com from which we took the flashcards from the following categories (all possible results up to 100 max pages):
+  - Science
+  - Biology,
+  - Physics
+  - Chemistry
+  - Anatomy
+  - Physiology
+  - Cell
+  - Chem
+  - Earth 
+
+
+The filtered version of wikipedia has been constructed in the following way:

@@ -1,0 +1,40 @@
+
+[
+    
+
+    ["gradboost2", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 40,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 2}
+    }],
+
+    ["gradboost4", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 60,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 2}
+    }],
+
+    ["gradboost6", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 80,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 2}
+    }]
+]

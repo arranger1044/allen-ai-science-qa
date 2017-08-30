@@ -1,0 +1,92 @@
+[
+    ["lda00", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"lsqr",
+                              "shrinkage":0.3}
+    }],
+    ["lda0", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"lsqr",
+                              "shrinkage":0.5}
+    }],
+    ["lda1", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"lsqr",
+			      "shrinkage":0.1}
+    }],
+    ["lda2", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"lsqr",
+                              "shrinkage":0.05}
+    }],
+    ["lda3", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"lsqr",
+                              "shrinkage":0.01}
+    }],
+    ["lda4", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"lsqr",
+                              "shrinkage":0.05}
+    }],
+    ["lda5", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"lsqr",
+                              "shrinkage":0.001}
+    }],
+    ["lda6", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"lsqr",
+                              "shrinkage":0.005}
+    }],
+    ["lda7", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"lsqr",
+                              "shrinkage":0.0001}
+    }],
+    ["lda9", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"eigen",
+                              "shrinkage":0.3}
+    }],
+    ["lda10", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"eigen",
+                              "shrinkage":0.5}
+    }],
+    ["lda11", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"eigen",
+                              "shrinkage":0.1}
+    }],
+    ["lda12", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"eigen",
+                              "shrinkage":0.05}
+    }],
+    ["lda13", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"eigen",
+                              "shrinkage":0.01}
+    }],
+    ["lda14", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"eigen",
+                              "shrinkage":0.05}
+    }],
+    ["lda15", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"eigen",
+                              "shrinkage":0.001}
+    }],
+    ["lda16", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"eigen",
+                              "shrinkage":0.005}
+    }],
+    ["lda17", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"eigen",
+                              "shrinkage":0.0001}
+    }]
+]

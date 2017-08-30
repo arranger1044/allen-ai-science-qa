@@ -1,0 +1,31 @@
+We exploited word2vec (w2v) models as another predictor in our architecture. The output of the models is a similarity score between the question and one of the answers.
+We used the python lib gensim () to use w2v and implemented our routines in the script word2vec_exp.py.
+There are several routines to run a grid search among w2v parameters and evaluate an existing model. Moreover one can specify different functions to preprocess the text (both question and answer), to compute the embedding for a sentence, the how to compute the similarity among sentences and which metric to use in doing so. We found out that the best combination consists of using a light pipeline processing consisting in separating punctuation, tokenization and common stopword removal ('st>tk>rs' value for the parameter '--proc-func'); then use the sum of the token embeddings to get an embedding for a whole sentence ('sum' value for the parameter '--ret-func'). We apply a version of the quantistic negation (implemented with Grahm Schmidt orthogonalization routines) to compute the similarity among a question 'q' and answer 'a_i'. First we get the embedding for question 'q', then for 'a' we get the embedding by doing the sum of its token embeddings, then we negate it with the embedding which is the result of summing the embeddings of all other tokens in the other possible answers that are not present in 'a_i'. The rationale behind this is that we want to exploit the fact that we are in an answer selection task and only one answer can be true at a time. In this way we are subtracting from 'a_i' embedding all the tokens embeddings that are coming from the 'wrong' answers and are not in 'a_i'. As a similarity metric we use the correlation coefficient instead of the classical cosine similarity since we have found it to be more robust when combined with Ghram-Schmidt.
+
+We learned three different models based on three different corpora:
+- ck12
+- concepts
+- studystack
+
+We found that all other corpora were too scarce in vocabulary or too noisy and the w2v accuracy performances degraded a lot (< 39%, while on studystack they are at ~42%).
+We are providing these three learned models in the directory 'model/w2v-scores/'. We will now show how to learn them and evaluate them again, however we were not able to set a seed properly in the library. It appears that this is an issue related on the multithreading randomicity (more threads are needed to process the whole corpora, however even with one thread alone the C implementation seed cannot be set properly) We opened an issue for the lib: https://github.com/piskvorky/gensim/issues/546
+
+An example to learn a w2v model from the ck12 corpus (after having it decompressed) and evaluate on a training set and on a test set (whose paths are to specify) is to run the following command:
+
+    ipython -- word2vec_exp.py ../../corpora/ck12.txt -e 500  -w 20 -i 50 -j 8 --proc-func 'sp>tk>rs' --pred-func gra --ret-func sum --sim-func cor --alpha 0.025 -o ../../model/w2v-scores/ --exp-name ck12 --train <training-set-pat> --test <test-set-path>
+
+this set all the best parameters we found and stores the result in a folder called exp_ck12 inside model/w2v_scores. Inside this folder the model is saved in 0/0.model as a binary format that is readable with gensim.
+
+To run this command for all three corpora we have prepared another bash script: train_w2v.sh in which one has to specify only the training and test paths once:
+
+    ./train_w2v ../../data/training_set.tsv  ../../validation_set.tsv
+
+If one has an already learned model and just wants to evaluate on another pair of dataset, the same word2vec_exp script can be used, by specifying the model path and the dataset paths:
+
+    ipython -- word2vec_exp.py <model-path>  --pred-func gra --ret-func sum --sim-func cor --eval -o ../../model/w2v-scores/ --exp-name ck12-eval --train <training-set-path> --test <test-set-path>
+
+We are also providing a bash script that evaluates the previously learned models for all three corpora and produces the outputs as the predicted scores for the training and test set (the path of the models is fixed and assumed to be the one written in the above scripts)
+
+    ./eval_w2v ../../data/training_set.tsv  ../../validation_set.tsv
+
+After the evaluation, in model/w2v-scores/ new folders are created, e.g. ck12-eval for the scores on ck12.

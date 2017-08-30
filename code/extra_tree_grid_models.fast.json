@@ -1,0 +1,50 @@
+[
+ ["extrtree10", {
+        "base_model": "etc",
+        "base_model_params": {
+            "n_estimators": 150,
+            "class_weight": "balanced",
+            "max_depth": 3,
+            "criterion": "gini"}
+    }],
+    ["extrtree11", {
+        "base_model": "etc",
+        "base_model_params": {
+            "n_estimators": 150,
+            "class_weight": "balanced",
+            "max_depth": 4,
+            "criterion": "gini"}
+    }],
+    ["extrtree12", {
+        "base_model": "etc",
+        "base_model_params": {
+            "n_estimators": 150,
+            "class_weight": "balanced",
+            "max_depth": 5,
+            "criterion": "gini"}
+    }],
+    ["extrtree13", {
+        "base_model": "etc",
+        "base_model_params": {
+            "n_estimators": 200,
+            "class_weight": "balanced",
+            "max_depth": 3,
+            "criterion": "gini"}
+    }],
+    ["extrtree14", {
+        "base_model": "etc",
+        "base_model_params": {
+            "n_estimators": 200,
+            "class_weight": "balanced",
+            "max_depth": 4,
+            "criterion": "gini"}
+    }],
+    ["extrtree15", {
+        "base_model": "etc",
+        "base_model_params": {
+            "n_estimators": 200,
+            "class_weight": "balanced",
+            "max_depth": 5,
+            "criterion": "gini"}
+    }] 
+]

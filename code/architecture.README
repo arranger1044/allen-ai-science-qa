@@ -1,0 +1,12 @@
+Our architecture is a layered stacked architecture composed by several components. We will briefly review them in the following parts.
+
+The first layer is made by the predictors we extract by using several combinations of Information Retrival parameters on top of different combinations of corpora which we indexed using Lucene.
+With Lucene we considered these parameters:
+  - similarity metrics involved: VSM, BM25, LanguageModel, DivergenceFromRandomness
+  - analyzers: Standard Analyzer, English Analyzer
+
+We executed queries composed by a question plus one answer concatenated, with one of the possible models from the combinations of the above parameters, then we started considering the top k retrieved documents, with k going from 1 up to 40. For each value of k we summed the scores obtained by Lucene for the top k documents, creating a confidence score (a predictor) for the considered answer. We repeated this process for all the answers and we then normalized our scores for all four answers such to have some probability predictors ranging from 0 to 1 and summing to 1.
+
+Moreover, we considered two alternative ways to perform a query, by including a form of negation or not. Considering that only one of the possible answers is the true one, while performing a query, if the negation option is considered, we are negating in Lucene all the tokens coming from the other answers that do not appear in the currently considered one. In this way we are trying to focus only on those part of answers that are highly discriminative in the retrieval phase. We found out that for many similarities on different corpora this lead to an accuracy improvement. When the accuracy did not improve we ended up with another set of predictors in the mix.
+
+If we used all the possible combinations above (8), turned the negation parameter on or off (2), with k up to 40, we ended up with 640 predictors for each dataset, given a corpus. In practice we used in end much less predictors, exploring the variations with k up to 10 since we noticed that for k > 10 the predictors were highly correlated.

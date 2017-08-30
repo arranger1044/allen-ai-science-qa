@@ -1,0 +1,57 @@
+[
+    ["logistic4", {
+        "base_model": "lr",
+        "base_model_params": {
+            "fit_intercept": true,
+            "class_weight": "balanced",
+            "penalty": "l2",
+            "C": 3.0,
+            "max_iter": 200}
+    }],
+
+    ["adaboost4", {
+        "base_model": "abc",
+        "base_model_params": {"n_estimators": 40,
+                              "learning_rate": 0.1}
+    }],
+    ["randfor15", {
+        "base_model": "rfc",
+        "base_model_params": {
+            "n_estimators": 100,
+            "class_weight": "balanced",
+            "max_depth": 5,
+            "criterion": "gini"}
+    }],
+    ["extrtree6", {
+        "base_model": "etc",
+        "base_model_params": {
+            "n_estimators": 100,
+            "class_weight": "balanced",
+            "max_depth": 5,
+            "criterion": "gini"}
+    }],
+    ["lda0", {
+        "base_model": "lda",
+        "base_model_params": {"solver":"lsqr",
+                              "shrinkage":0.5}
+    }],
+    ["svm2", {
+        "base_model": "svc",
+        "base_model_params": {"probability":true,
+                              "kernel":"linear",
+                              "class_weight":"balanced",
+                              "C":1.0}
+    }],
+    
+    ["gradboost3", {
+        "base_model": "gbm",
+        "base_model_params": {"loss": "deviance",
+                              "learning_rate": 0.1,
+                              "n_estimators": 40,
+                              "subsample": 1.0,
+                              "min_samples_split": 2,
+                              "min_samples_leaf": 1,
+                              "min_weight_fraction_leaf": 0.0,
+                              "max_depth": 3}
+    }]
+]
